@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            .login{
+                background-color:aqua; 
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Form</h1>
+        <form>
+            <label for="email">email:</label>
+            <input type ="text" id="email" placeholder="enter your email ID">
+            <br>
+            <br>
+            <label for="password">password:</label>
+            <input type="password" id="password" placeholder="enter your password">
+            <br>
+            <br>
+            <button type="button"class="login" onclick="hello()">login</button>
+
+            </form>
+            </form>
+        </form>
+        <script>
+            class login{
+                constructor (email,password){
+                    this.email=email
+                    this.password=password
+                }
+            }
+            function hello(){
+                        let email = document.getElementById('email')
+                        let password = document.getElementById('password')
+                        const logindata = new login (email.value,password.value)
+                        console.log(logindata)
+                    }
+             </script>
+    </body>
+</html>
